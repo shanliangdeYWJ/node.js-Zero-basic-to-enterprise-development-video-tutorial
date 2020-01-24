@@ -6,7 +6,7 @@
 
 	`git commit -m "这个干了啥。。。"`
 
-	`git remote add origin https://github.com/shanliangdeYWJ/-Three.js-.git`  地址是仓库的 HTTPS 地址
+	`git remote add origin https://github.com/shanliangdeYWJ/node.js-Zero-basic-to-enterprise-development-video-tutorial.git`  地址是仓库的 HTTPS 地址
 
 	`git push -u origin master`    提交远程仓库
 	
