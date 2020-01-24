@@ -52,8 +52,10 @@ node.js Zero basic to enterprise development video tutorial
 目  录: 匹配模式最后加 / 代表是目录
 取  反: 匹配模式前加 ! 代表取反(应用于忽略某个文件夹，但是文件夹里面某个文件不忽略)
 
-*代表任意个字符
-?匹配任意一个字符
-**匹配多级目录
+*代表任意个字符  
+?匹配任意一个字符  
+**匹配多级目录  
+	
+	比如 node_modules/**/index.js
 
 ## 使用方法 
