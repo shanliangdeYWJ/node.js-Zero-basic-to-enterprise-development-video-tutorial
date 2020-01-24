@@ -1,0 +1,27 @@
+{
+    "name": "node.js-zero-basic-to-enterprise-development-video-tutorial",
+    "version": "1.0.0",
+    "description": "Nodejs 静态资源服务器",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shanliangdeYWJ/node.js-Zero-basic-to-enterprise-development-video-tutorial.git"
+    },
+    "keywords": [
+        "static",
+        "webserver"
+    ],
+    "author": "善良的YWJ",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shanliangdeYWJ/node.js-Zero-basic-to-enterprise-development-video-tutorial/issues"
+    },
+    "homepage": "https://github.com/shanliangdeYWJ/node.js-Zero-basic-to-enterprise-development-video-tutorial#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.8.0"
+    }
+}
