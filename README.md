@@ -61,3 +61,33 @@ node.js Zero basic to enterprise development video tutorial
 	比如 node_modules/**/index.js
 
 ## 使用方法 
+
+
+## 安装模块
+
+### 代码检查 eslint
+
+eslint babel-eslint 要装一起  
+
+(先全局安装，vscode 的 Eslint 插件 根据全局的 `eslint babel-eslint 插件`进行运作 )
+
+	npm install  eslint babel-eslint -g
+
+或是
+
+	npm install eslint babel-eslint -D
+
+
+### 热更新 supervisor
+
+全局安装
+
+	npm i -g supervisor
+
+	启动 supervisor app.js // app.js 是入口文件
+	
+### 控制台打印有颜色的信息 chalk
+
+安装在 非开发的依赖中 后期上线也需要
+
+	npm install chalk
