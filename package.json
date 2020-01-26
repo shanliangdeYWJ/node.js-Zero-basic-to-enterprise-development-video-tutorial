@@ -22,9 +22,13 @@
     "homepage": "https://github.com/shanliangdeYWJ/node.js-Zero-basic-to-enterprise-development-video-tutorial#readme",
     "devDependencies": {
         "babel-eslint": "^10.0.3",
-        "eslint": "^6.8.0"
+        "eslint": "^6.8.0",
+        "gulp": "^4.0.2",
+        "nodemon": "^2.0.2"
     },
     "dependencies": {
-        "chalk": "^3.0.0"
+        "chalk": "^3.0.0",
+        "handlebars": "^4.7.2",
+        "mime": "^2.4.4"
     }
 }

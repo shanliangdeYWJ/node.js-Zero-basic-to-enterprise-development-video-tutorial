@@ -1,21 +1,16 @@
 const http = require('http');
 const chalk = require('chalk');
+const path = require('path');
 const conf = require('./config/defaultConfig');
+const route = require('./helper/router');
 
 // 创建 server
-
 const server = http.createServer((req, res) => {
-	res.statusCode = 200;
-	// res.setHeader('Content-Type', 'text/plain');
-	res.setHeader('Content-Type', 'text/html');
-	res.write('<html>')
-	res.write('<body>')
-	res.write('Hello HTTP!')
-	res.write('</body>')
-	res.end('</html>')
+  const filePath = path.join(conf.root, req.url);
+  route(req, res, filePath, conf);
 });
 
 server.listen(conf.port, conf.hostname, () => {
-	const addr = `http://${conf.hostname}:${conf.port}`;
-	console.info(`Server start at ${chalk.green(addr)}`);
+  const addr = `http://${conf.hostname}:${conf.port}`;
+  console.info(`Server start at ${chalk.green(addr)}`);
 });
