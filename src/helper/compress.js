@@ -2,7 +2,7 @@ const {createGzip,createDeflate} = require('zlib');
 module.exports = (rs, req, res) => {
 	const acceptEncoding = req.headers['accept-encoding'];
 	// 两种情况不支持压缩 1. 浏览器声明不支持任何压缩 2. 拿到的东西服务器不支持
-	if (!acceptEncoding || !acceptEncoding.match(/\b(gzip|dafault)\b/)) {
+	if (!acceptEncoding || !acceptEncoding.match(/\b(gzip|default)\b/)) {
 		return rs;
 	} else if(acceptEncoding.match(/\bgzip\b/)){
 		res.setHeader('Content-Encoding', 'gzip');
